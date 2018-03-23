@@ -57,11 +57,11 @@ logistic growth, death, and harvesting:\\
 
 Here, $P(t)$ represents the fishery biomass (total mass of fish). The constant $r$ relates to
 the growth rate of your population, and $K$ is the carrying capacity of your fishery- the
-maximum biomass that the fishery can sustain. The term -αP accounts for the natural
+maximum biomass that the fishery can sustain. The term $-\alpha P$ accounts for the natural
 death of the fish. Assume $r$, $K$, $\alpha$, and $P(t)$ are all positive\\
 
 The function $H(t, P)$ describes the harvesting of the fish. The fishery wants to understand
-what would happen to the population of fish under different harvesting scenarios
+what would happen to the population of fish under different harvesting scenarios.
 
 \begin{enumerate}
     \item[(a)]Pick your favorite aquatic organism to model, then come up with reasonable values for
@@ -96,7 +96,7 @@ Compare the accuracy of each set of results relative to the analytic answer.
     \item[(e)] (\textit{Optional}) Think of some other harvesting strategy that might be reasonable besides
 the two considered here. Your $H(t, P)$ could involve time. (Perhaps it changes with the
 season?) Extend your numerical method so that it can also numerically approximate
-$P(t)$ for your chosen harvesting function
+$P(t)$ for your chosen harvesting function.
 \end{enumerate}
 \end{problem}
 \newpage
@@ -142,7 +142,7 @@ height of the water in the bucket decreases by $\Delta h$ and the density of the
 the net change of potential energy in the system is$ \Delta mgh = \rho A\Delta hgh$. Since energy
 cannot be created or destroyed, this decreased potential energy must be converted into
 kinetic energy. The kinetic energy of the same amount of water leaving the bucket
-is $\frac{1}{2}\Delta mv^2 =\frac{1}{2}\rho A\Delta hv^2$. Equating these two energies, we get$v^2 = 2gh$. Using this
+is $\frac{1}{2}\Delta mv^2 =\frac{1}{2}\rho A\Delta hv^2$. Equating these two energies, we get $v^2 = 2gh$. Using this
 information, derive a differential equation for $h(t)$.
     \item[(c)] Assume that at $t = 0$ the height of the water in the bucket is $h_0$. Define $t^\ast$ to be the time when the bucket becomes empty. Find an expression for $t^\ast$. What is $h(2t^\ast)$?(Make sure your answer is sensible.)
     \item[(d)] Suppose that at $t = 5$ you observe that the bucket is empty. Is it possible to determine
@@ -155,7 +155,8 @@ information, derive a differential equation for $h(t)$.
 \begin{problem}
 6. (5 points) For each IVP, what can you say about the interval forward in time from the initial
 condition in which you can guarantee existence and uniqueness of the solution? Make sure
-you explain why your claim is true. Use dfield1
+you explain why your claim is true. Use dfield* (*Google "direction field" or "slope field" to find an
+application that plots slope fields)
 to plot a direction field and solution curve for
 each IVP. In a couple of sentences, explain how the solutions you see are or are not consistent
 with the results of the theorem(s) you applied. \textbf{You do not have to analytically solve
@@ -191,8 +192,8 @@ do not need to solve the ODE, but provide a brief explanation.}
 
 \begin{enumerate}
     \item[(a)] $y' + (\text{cos}(t))y = \text{cos}(t)$
-    \item[(b)] $y'+ xy^ = e^x$
-    \item[(c)]$y'''+ y'\text{sin}(t) + 3y^2 = t$
+    \item[(b)] $\frac{\mathrm{d} y}{\mathrm{d} x} + xy^2 = e^x$
+    \item[(c)]$y''+ y'\text{sin}(t) + 3y^2 = t$
     \item[(d)]$e^xy' + y = \text{tan}(x)$
 \end{enumerate}
 \end{problem}
